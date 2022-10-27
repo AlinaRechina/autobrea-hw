@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кровостокорпус</title>
+</head>
+<body>
+
+<br>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/main">Главная</a>
+  <a class="navbar-brand" href="/instruction">Инструкция</a>
+  <form action="/result" method = "GET" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Найти" aria-label="Search" name="query">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+  </form>
+</nav>
+
+
+    <h2><span style="padding: 0px 5px;">&ensp;</span><b>Как сделать запрос</b></h2>
+
+	<p>
+<span style="padding: 0px 5px;">&ensp;</span>Запрос может содержать элементы 4 видов:<br>
+<span style="padding: 0px 5px;">&ensp;</span>1) <b>Лексема</b>: находит все вхождения по лексеме (во всех словоформах).<br>
+<span style="padding: 0px 5px;">&ensp;</span><em>Например</em>: любить<br>
+<span style="padding: 0px 5px;">&ensp;</span>2) <b>Конкретная словоформа</b>: находит все вхождения, в которой элемент встречается в введенной форме. Можно вводить слово как в двойных кавычках, так в одинарных.<br>
+<span style="padding: 0px 5px;">&ensp;</span><em>Например</em>: “неровных”<br>
+<span style="padding: 0px 5px;">&ensp;</span>3) <b>Тег части речи</b>: находит все вхождения указанной части речи.<br>
+<span style="padding: 0px 5px;">&ensp;</span><em>Например</em>: VERB<br>
+<span style="padding: 0px 5px;">&ensp;</span>4) <b>Cловоформа + частеречный тег</b>: находит все вхождения, когда конкретной словоформе соответствует указанная часть речи.<br>
+<span style="padding: 0px 5px;">&ensp;</span><em>Например</em>: небе+NOUN<br>
+<span style="padding: 0px 5px;">&ensp;</span>(здесь словоформе не нужны кавычки)<br><br>
+
+<span style="padding: 0px 5px;">&ensp;</span>Теги можно вводить и заглавными, и строчными буквами.<br>
+<span style="padding: 0px 5px;">&ensp;</span>Запрос может содержать несколько элементов, в таком случае их необходимо вводить через пробел.<br>
+	</p>
+	
+	<h3><span style="padding: 0px 5px;">&ensp;</span><b>Используемые теги</b></h3>
+	<p>
+<span style="padding: 0px 5px;">&ensp;</span>NOUN – имя существительное<br>
+<span style="padding: 0px 5px;">&ensp;</span>ADJF – имя прилагательное (полное)<br>
+<span style="padding: 0px 5px;">&ensp;</span>ADJS – имя прилагательное (краткое)<br>
+<span style="padding: 0px 5px;">&ensp;</span>COMP – компаратив<br>
+<span style="padding: 0px 5px;">&ensp;</span>VERB – глагол (личная форма)<br>
+<span style="padding: 0px 5px;">&ensp;</span>INFN – глагол (инфинитив)<br>
+<span style="padding: 0px 5px;">&ensp;</span>PRTF – причастие (полное)<br>
+<span style="padding: 0px 5px;">&ensp;</span>PRTS – причастие (краткое)<br>
+<span style="padding: 0px 5px;">&ensp;</span>GRND – деепричастие<br>
+<span style="padding: 0px 5px;">&ensp;</span>NUMR – числительное<br>
+<span style="padding: 0px 5px;">&ensp;</span>ADVB – наречие<br>
+<span style="padding: 0px 5px;">&ensp;</span>NPRO – местоимение-существительное<br>
+<span style="padding: 0px 5px;">&ensp;</span>PRED – предикатив<br>
+<span style="padding: 0px 5px;">&ensp;</span>PREP – предлог<br>
+<span style="padding: 0px 5px;">&ensp;</span>CONJ – союз<br>
+<span style="padding: 0px 5px;">&ensp;</span>PRCL – частица<br>
+<span style="padding: 0px 5px;">&ensp;</span>INTJ – междометие<br>
+	</p>
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./static/css/carousel.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+        body {
+            background: LemonChiffon;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+		.carousel {
+			margin: auto;
+			width: 1200px;
+			height: 700px;
+			box-shadow: 0 1em 5em black;
+		}
+
+		body {
+			font-family: cursive 
+		}
+
+		.mySlides {
+			display: none
+		}
+
+		@font-face {
+			font-family: fantasy;
+			src: url('./static/fonts/Bickham Script Two.ttf');
+		}
+
+		.unselectable {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-text-stroke: 0.75px black;
+			text-shadow: 2px 2px 4px black;
+			text-align: right;
+			font-size: 112px;
+			color: white;
+			margin-left: 10px;
+			font-family: fantasy;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -15%;
+			margin-left: -500px;
+			width: 900px;
+			height: 80px;
+			z-index: 5
+		}
+        .btn {
+            border: solid 2px transparent;
+            background-color: Maroon;
+            color: white;
+            outline: 0;
+        }
+
+            .btn:hover {
+                background-color: #006769; /* Green */
+                color: white;
+            }
+
+        .btn-primary:not(:disabled):not(.disabled): {
+            outline: 2px#006769;
+        }
+
+            .btn-primary:not(:disabled):not(.disabled):active {
+                border: solid 2px black;
+                background-color: #006769; /* Green */
+                color: white;
+                outline: 2px#006769;
+                box-shadow: 2px 2px 2px 1px #006769
+            }
+	</style>
+	<link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body style="background-image: url(./static/pics/them.jpg)">
+
+	<!-- Navbar -->
+	<div class="w3-top" style="float: left">
+		<div class="w3-bar w3-transparent">
+			<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="#" class="w3-bar-item w3-button">Главная</a>
+			<a href="/instruction" class="w3-bar-item w3-button">Инструкция</a>
+		</div>
+	</div>
+
+	<!-- Page content -->
+	<div class="w3-content" style="max-width: 2000px; margin-top: 56px; height: 100vh;">
+
+		<h1 class="unselectable">
+			Кровостокорпус
+		</h1>
+		<!-- Automatic Slideshow Images -->
+		<form action="/result" method = "GET" class="container" style="position: absolute; top: 50%; left: 50%; margin-top: 160px; margin-left: -450px; width: 900px; height: 80px; z-index: 5">
+			<div class="row justify-content-center" style="float: left; min-width:100%">
+				<div class="col-12 col-md-10 col-lg-8" style="float: left; min-width:100%">
+					<form class="card card-sm">
+						<div class="card-body row no-gutters align-items-center">
+							<div class="col-auto">
+								<i class="fas fa-search h4 text-body"></i>
+							</div>
+							<!--end of col-->
+							<div class="col">
+								<input name="query" style="color: #006769" " class="form-control form-control-lg form-control-borderless" type="search" placeholder="Введите запрос"></input>
+							</div>
+							<!--end of col-->
+							<div class="col-auto">
+								<button class="btn btn-lg btn-primary" type="submit" style="color: white">Поиск</button>
+							</div>
+							<!--end of col-->
+						</div>
+					</form>
+				</div>
+				<!--end of col-->
+			</div>
+		</form>
+
+
+		<div class="carousel ">
+			<img src="./static/pics/photo1.png" style=" width:100%">
+			<img src="./static/pics/photo2.png" style=" width:100%">
+			<img src="./static/pics/photo3.png" style=" width:100%">
+			<img src="./static/pics/photo4.png" style=" width:100%">
+
+		</div>
+
+		<div class="w3-container w3-content w3-center" style="padding: 44px; margin-top: 20px; background-color: white;">
+			<h2 class="w3-wide">О КОРПУСЕ</h2>
+			<img style=" height: 25px; width: auto; padding: 3px" src="./static/pics/down.png" />
+			<p class="w3-justify" style="margin-top: 10px">
+				Корпус собран на основе текстов Кровостока. В него вошли 10000 словоупотреблений из 39 песен, распознанные программными методами. Для каждого текста произведена морфологическая разметка в
+				соответствии с облегчённым тегсетом pymorphy2 (подробнее о тегсете и работе корпуса можно узнать в <a href="/instruction">инструкции</a>).
+				
+			
+			</a>
+			<p class="w3-medium"></p>
+
+		</div>
+
+		<p class="w3-medium" style="height: 40px"></p>
+
+		<!-- End Page Content -->
+	</div></body>
+</html>
+
+</html>
